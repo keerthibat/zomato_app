@@ -1,0 +1,342 @@
+body{
+    margin:auto;
+    background-color:#fbfbfb;
+}
+*{
+    font-family: poppins;
+}
+
+a{
+    text-decoration:none
+}
+
+header{
+    height:60px;
+    /*border:5px solid hotpink;*/
+    background-color: #3b2632;
+}
+
+.login, .account{
+    text-decoration: none;
+    color:white;
+    opacity:0.8;
+}
+.login:hover,.account:hover{
+    color:white;
+}
+#brand{
+    float: left;
+    color:white;
+    font-size: 30px;
+    margin-top:1%;
+    margin-left:1%
+}
+
+#social{
+    float: right;
+}
+
+.socialLogo{
+    height:50px
+}
+
+#search{
+    height:450px;
+    /* border:10px groove green;
+     */
+    background-image: url('images/food-wallpaper.png');
+    background-repeat: no-repeat;
+    /* background-size: cover; */
+    background-size: 100% 450px;
+}
+
+.logo{
+    height:120px;
+    display:inline-block;
+    width: 120px;
+    background-color: white;
+    border-radius:50%;
+    position: absolute;
+    top:13%;
+    bottom:50%;
+    left:42%;
+    font-size: 77px;
+    color:red;
+    font-weight:600;
+    margin-left:80px;
+    bottom:8px;
+    text-align: justify;
+    margin-bottom:30px;
+
+    
+}
+
+@keyframes revolve{
+    0%{
+        margin-left:2%;
+        transform: rotate(30deg);
+    }
+    25%{
+        margin-left:20%;
+        transform: rotate(90deg);
+    }
+    50%{
+        margin-left:40%;
+        transform: rotate(180deg);
+    }
+    75%{
+        margin-left:80%;
+        transform: rotate(270deg);
+    }
+    100%{
+        margin-left:40%;
+        transform: rotate(360deg);
+    }
+}
+
+.logo > span{
+    margin-left: 20%;
+    margin-top: 15%;
+    position: absolute;
+}
+
+#heading{
+    font-size:35px;
+    color:white;
+    margin-left: 30%;
+    margin-top: 15%;
+    position: absolute;
+    font-weight: 500;
+}
+
+.dropdown{
+    height:60px;
+    width:50%;
+    /* border:2px solid white; */
+    margin-left: 30%;
+    margin-top: 22%;
+    position: absolute;
+}
+
+select{
+    height:60px;
+    width:40%;
+    font-size:20px;
+    text-align: center;
+}
+
+#restSelect{
+    width:59%;
+}
+
+#quickSearch{
+    /* height:600px; */
+    /* border:5px dotted blue; */
+    width:80%;
+    margin-left: 10%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+
+.quickHeading{
+    color:#3b2632;
+    font-size:30px;
+    font-weight:bold;
+    display: block;
+    margin-left: 2%;
+}
+
+.quickHeading:hover{
+    font-size:45px;
+    color:green
+}
+
+.quickSubHeading{
+    font-size:20px;
+    color:gray;
+    line-height: 2;
+    margin-left: 2%;
+}
+
+#tileBox{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.tileContainer{
+    height:180px;
+    width:30%;
+    margin-left: 2%;
+    margin-top: 3%;
+    display: flex;
+    box-shadow: 10px 20px 10px #3b2632;
+    animation: dance 15s infinite;
+}
+
+@keyframes dance{
+    0%{
+        transform:rotate(-5deg)
+    }
+    25%{
+        transform:rotate(0deg)
+    }
+    40%{
+        transform:scale(1.1)
+    }
+    50%{
+        transform:rotate(5deg)
+    }
+    75%{
+        transform:rotate(0deg)
+    }
+    100%{
+        transform:rotate(-5deg)
+    }
+    
+}
+
+.tileContainer:hover{
+    transform:scale(1.1)
+    /* transform:skewY(30deg);
+    transform:rotate(30deg) */
+    /* transform:translate(100px, 200px) */
+}
+
+.tileComponent1{
+    width:52%;
+}
+
+.tileComponent1 > img{
+    width: 100%;
+    height: 100%;
+   
+}
+
+.tileComponent2{
+    width:45%;
+    margin-left: 3%;
+    margin-top: 15%;
+}
+
+.compHeading{
+    font-size: 25px;
+    font-weight: bold;
+}
+
+.compHeading > a{
+    color:#3b2632 !important;
+}
+
+.compSubHeading{
+    font-size: 20px;
+    color:gray
+}
+
+footer{
+    /* height: 80px; */
+    /* border:10px double orange */
+    background-color:gray;
+    text-align: center;
+    color: white
+}
+
+.footText{
+    font-size: 20px;
+}
+
+.footDiv{
+    display: inline-block;
+    width:32%;
+    border-right: 2px solid white;
+}
+
+ul{
+    list-style-type: none;
+}
+
+.noborder{
+    border:none
+}
+
+@media screen and (max-width:1600px){
+    body{
+        background-color: rgb(241, 168, 168);
+    }
+}
+
+@media screen and (max-width:1400px){
+    body{
+        background-color: rgb(241, 226, 168);
+    }
+}
+
+
+@media screen and (max-width:1200px){
+    body{
+        background-color: rgb(207, 241, 168);
+    }
+}
+
+@media screen and (max-width:1100px){
+    body{
+        background-color: rgb(168, 241, 209);
+    }
+}
+
+@media screen and (max-width:1021px){
+    body{
+        background-color: rgb(168, 208, 241);
+    }
+    .tileContainer{
+        width:45%;
+    }
+
+}
+
+@media screen and (max-width:800px){
+    body{
+        background-color: rgb(195, 168, 241);
+    }
+}
+
+@media screen and (max-width:700px){
+    body{
+        background-color: rgb(241, 168, 234);
+    }
+
+    .tileContainer{
+        width:90%;
+    }
+}
+
+    
+
+.logins{
+    position:absolute;
+    top:15px;
+    bottom:13px;
+    left:80%;
+    float:right;
+    color:white;
+    font-family: 'Poppins', sans-serif;
+    font-weight:medium;
+}
+.logins>a{
+    Text-decoration:none;
+    color:white;
+
+    #ca{
+        margin-left:30px;
+        width:181px;
+        height:46px;
+        background:red;
+        border:1px solid white;
+        text-align:center;
+        color:white;
+        font-size:13px;
+        font-family: 'Poppins', sans-serif;
+        font-weight:medium;
+        cursor: pointer;
+    
+    }
+}
